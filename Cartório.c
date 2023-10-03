@@ -132,6 +132,7 @@ int main()
 	    printf ("\t1 - Registrar nomes \n");
     	printf ("\t2 - Consultar nomes \n");
     	printf ("\t3 - Deletar nomes \n\n"); 
+    	printf( "\t4 Sair do sistema \n");
     	printf("opção:  "); // fim do menu
 	
     	scanf("%d", &opcao); // scanf vai scanear tudo que está dentro da variável. Letra d, é referência da variável int. O & mostra onde o usuário vai digitar
@@ -151,6 +152,12 @@ int main()
 	    	case 3:
 	        deletar();
         	break;	
+        	
+        	case 4:
+        	printf("Obrigado por utilizar o sistema! \n");
+        	return 0; // retorna ao valor 0, ou seja a gente quebra função e tudo mais e sai do sistema.
+        	break;
+        	
         	
         	default:
     		printf("Essa opção não está disponível! \n");
